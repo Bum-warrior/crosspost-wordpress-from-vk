@@ -1,5 +1,7 @@
 <?php
 
+$confirmation_code = 'aaaaaa'
+
 header('Content-Type: text/html; charset=utf-8');
 
 include '../wp-load.php';
@@ -74,7 +76,7 @@ function upload_file_by_url( $image_url ) {
 switch ($data->type){
     case 'confirmation':
 		//past here confirmation code
-        echo 'aaaaaaaa';
+        echo $confirmation_code;
         exit();
         break;
     case 'wall_post_new':
